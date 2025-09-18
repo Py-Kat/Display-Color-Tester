@@ -206,5 +206,25 @@ blue_window_button.place(
     anchor="e"
 )
 
+
+# Labels
+
+
+# Version Number Label
+version_label = tk.Label(
+    window,
+    text="v1.0",
+    font=("Helvetica", 14, "bold")
+)
+version_label.config(
+    background="#323232",
+    foreground="#4E0096",
+)
+version_label.place(
+    relx=0.01,
+    rely=0.99,
+    anchor="sw"
+)
+
 # START PROGRAM
 window.mainloop()
