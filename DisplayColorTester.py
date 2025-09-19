@@ -1,5 +1,5 @@
 import tkinter as tk
-from window_commands import (
+from functions import (
     window,
     set_black,
     set_grey,
