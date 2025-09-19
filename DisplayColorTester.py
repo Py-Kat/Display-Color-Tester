@@ -6,8 +6,12 @@ from window_commands import (
     set_white,
     set_red,
     set_green,
-    set_blue
+    set_blue,
+    set_yellow,
+    set_pink,
+    set_cyan
 )
+
 
 #     Buttons
 
@@ -36,7 +40,7 @@ black_window_button = tk.Button(
     window,
     text="Black",
     command=set_black,
-    font=("Helvetica", 20, "bold")
+    font=("Helvetica", 22, "bold")
 )
 black_window_button.config(
     activebackground="#000000",
@@ -55,7 +59,7 @@ grey_window_button = tk.Button(
     window,
     text="Grey",
     command=set_grey,
-    font=("Helvetica", 20, "bold")
+    font=("Helvetica", 22, "bold")
 )
 grey_window_button.config(
     activebackground="#7F7F7F",
@@ -74,7 +78,7 @@ white_window_button = tk.Button(
     window,
     text="White",
     command=set_white,
-    font=("Helvetica", 20, "bold")
+    font=("Helvetica", 22, "bold")
 )
 white_window_button.config(
     activebackground="#FFFFFF",
@@ -93,7 +97,7 @@ red_window_button = tk.Button(
     window,
     text="Red",
     command=set_red,
-    font=("Helvetica", 20, "bold")
+    font=("Helvetica", 22, "bold")
 )
 red_window_button.config(
     activebackground="#FF0000",
@@ -103,7 +107,7 @@ red_window_button.config(
 )
 red_window_button.place(
     relx=0.01,
-    rely=0.5,
+    rely=0.25,
     anchor="w"
 )
 
@@ -112,7 +116,7 @@ green_window_button = tk.Button(
     window,
     text="Green",
     command=set_green,
-    font=("Helvetica", 20, "bold")
+    font=("Helvetica", 22, "bold")
 )
 green_window_button.config(
     activebackground="#00FF00",
@@ -121,8 +125,8 @@ green_window_button.config(
     foreground="#323232"
 )
 green_window_button.place(
-    relx=0.49,
-    rely=0.5,
+    relx=0.5,
+    rely=0.25,
     anchor="center"
 )
 
@@ -131,7 +135,7 @@ blue_window_button = tk.Button(
     window,
     text="Blue",
     command=set_blue,
-    font=("Helvetica", 20, "bold")
+    font=("Helvetica", 22, "bold")
 )
 blue_window_button.config(
     activebackground="#0000FF",
@@ -141,7 +145,64 @@ blue_window_button.config(
 )
 blue_window_button.place(
     relx=0.99,
-    rely=0.5,
+    rely=0.25,
+    anchor="e"
+)
+
+# Yellow Window Button
+yellow_window_button = tk.Button(
+    window,
+    text="Yellow",
+    command=set_yellow,
+    font=("Helvetica", 22, "bold")
+)
+yellow_window_button.config(
+    activebackground="#FFFF00",
+    activeforeground="#323232",
+    background="#FFFF00",
+    foreground="#323232"
+)
+yellow_window_button.place(
+    relx=0.01,
+    rely=0.42,
+    anchor="w"
+)
+
+# Pink Window Button
+pink_window_button = tk.Button(
+    window,
+    text="Pink",
+    command=set_pink,
+    font=("Helvetica", 22, "bold")
+)
+pink_window_button.config(
+    activebackground="#FF00FF",
+    activeforeground="#323232",
+    background="#FF00FF",
+    foreground="#323232"
+)
+pink_window_button.place(
+    relx=0.5,
+    rely=0.42,
+    anchor="center"
+)
+
+# Cyan Window Button
+cyan_window_button = tk.Button(
+    window,
+    text="Cyan",
+    command=set_cyan,
+    font=("Helvetica", 22, "bold")
+)
+cyan_window_button.config(
+    activebackground="#00FFFF",
+    activeforeground="#323232",
+    background="#00FFFF",
+    foreground="#323232"
+)
+cyan_window_button.place(
+    relx=0.99,
+    rely=0.42,
     anchor="e"
 )
 
@@ -152,7 +213,7 @@ blue_window_button.place(
 # Version Number Label
 version_label = tk.Label(
     window,
-    text="v1.0",
+    text="v1.1",
     font=("Helvetica", 14, "bold")
 )
 version_label.config(

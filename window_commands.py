@@ -4,7 +4,7 @@ import tkinter as tk
 window = tk.Tk()
 window.title("Display Color Tester!")
 window.geometry("420x420")
-window.resizable(True, True)
+window.resizable(False, False)
 window.config(background="#323232")
 
 
@@ -64,4 +64,34 @@ def set_blue():
     blue_window.geometry("1280x720")
     blue_window.resizable(True, True)
     blue_window.configure(background="#0000FF")
+    return
+
+
+# Yellow Window
+def set_yellow():
+    yellow_window = tk.Toplevel(window)
+    yellow_window.title("The Color Yellow!")
+    yellow_window.geometry("1280x720")
+    yellow_window.resizable(True, True)
+    yellow_window.configure(background="#FFFF00")
+    return
+
+
+# Pink Window
+def set_pink():
+    pink_window = tk.Toplevel(window)
+    pink_window.title("The Color Pink!")
+    pink_window.geometry("1280x720")
+    pink_window.resizable(True, True)
+    pink_window.configure(background="#FF00FF")
+    return
+
+
+# Cyan Window
+def set_cyan():
+    cyan_window = tk.Toplevel(window)
+    cyan_window.title("The Color Cyan!")
+    cyan_window.geometry("1280x720")
+    cyan_window.resizable(True, True)
+    cyan_window.configure(background="#00FFFF")
     return
