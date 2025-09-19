@@ -1,5 +1,6 @@
 import tkinter as tk
 import _tkinter
+from random import choice
 
 
 # MAIN WINDOW
@@ -286,6 +287,36 @@ close_button.place(
 )
 
 
+# Random Colored Window
+def random_color():
+    hex_chars = "ABCDEF0123456789"
+    chosen_color = "".join(choice(hex_chars) for _ in range(6))
+    random_color_window = tk.Toplevel(window)
+    random_color_window.title(f"#{chosen_color}")
+    random_color_window.geometry("1280x720")
+    random_color_window.resizable(True, True)
+    random_color_window.configure(background=f"#{chosen_color}")
+    return
+
+random_color_button = tk.Button(
+    window,
+    text="Random Color",
+    command=random_color,
+    font=("Helvetica", 16, "bold")
+)
+random_color_button.config(
+    activebackground="#7F7F7F",
+    activeforeground="#323232",
+    background="#7F7F7F",
+    foreground="#323232"
+)
+random_color_button.place(
+    relx=0.5,
+    rely=0.7,
+    anchor="s"
+)
+
+
 # Custom Colored Window
 def custom_color():
     user_color = color_input.get()
@@ -331,7 +362,7 @@ custom_window_button.config(
 )
 custom_window_button.place(
     relx=0.5,
-    rely=0.85,
+    rely=0.99,
     anchor="s"
 )
 
@@ -368,7 +399,7 @@ custom_input_label.config(
 )
 custom_input_label.place(
     relx=0.5,
-    rely=0.69,
+    rely=0.84,
     anchor="s"
 )
 
@@ -385,7 +416,7 @@ hashtag_label.config(
 )
 hashtag_label.place(
     relx=0.375,
-    rely=0.75,
+    rely=0.9,
     anchor="s"
 )
 
@@ -400,7 +431,7 @@ color_input = tk.Entry(
 )
 color_input.place(
     relx=0.5,
-    rely=0.75,
+    rely=0.9,
     anchor="s"
 )
 
