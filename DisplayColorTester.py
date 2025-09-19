@@ -289,18 +289,20 @@ close_button.place(
 # Custom Colored Window
 def custom_color():
     user_color = color_input.get()
+    window_color = user_color[:6:]
     custom_window = tk.Toplevel(window)
     custom_window.geometry("1280x720")
     custom_window.resizable(True, True)
     try:
-        custom_window.title(f"#{user_color}")
-        custom_window.configure(background=f"#{user_color}")
+        custom_window.title(f"#{window_color}")
+        custom_window.configure(background=f"#{window_color}")
     except _tkinter.TclError:
         custom_window.title("No Color Was Chosen!")
         custom_window.configure(background=f"#000000")
         no_color_label = tk.Label(
             custom_window,
-            text="Please input a HEX VALUE!",
+            text="Empty or Invalid Input!"
+                 "\n\nPlease input a HEX value!",
             font=("Helvetica", 40, "bold")
         )
         no_color_label.config(
@@ -317,7 +319,7 @@ def custom_color():
 
 custom_window_button = tk.Button(
     window,
-    text="Open",
+    text="Open Custom",
     command=custom_color,
     font=("Helvetica", 12, "bold")
 )
@@ -366,7 +368,7 @@ custom_input_label.config(
 )
 custom_input_label.place(
     relx=0.5,
-    rely=0.68,
+    rely=0.69,
     anchor="s"
 )
 
