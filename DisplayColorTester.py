@@ -23,6 +23,7 @@ def set_black():
     black_window.configure(background="#000000")
     return
 
+
 black_window_button = tk.Button(
     window,
     text="Black",
@@ -50,6 +51,7 @@ def set_grey():
     grey_window.resizable(True, True)
     grey_window.configure(background="#7F7F7F")
     return
+
 
 grey_window_button = tk.Button(
     window,
@@ -79,6 +81,7 @@ def set_white():
     white_window.configure(background="#FFFFFF")
     return
 
+
 white_window_button = tk.Button(
     window,
     text="White",
@@ -106,6 +109,7 @@ def set_red():
     red_window.resizable(True, True)
     red_window.configure(background="#FF0000")
     return
+
 
 red_window_button = tk.Button(
     window,
@@ -135,6 +139,7 @@ def set_green():
     green_window.configure(background="#00FF00")
     return
 
+
 green_window_button = tk.Button(
     window,
     text="Green",
@@ -162,6 +167,7 @@ def set_blue():
     blue_window.resizable(True, True)
     blue_window.configure(background="#0000FF")
     return
+
 
 blue_window_button = tk.Button(
     window,
@@ -191,6 +197,7 @@ def set_yellow():
     yellow_window.configure(background="#FFFF00")
     return
 
+
 yellow_window_button = tk.Button(
     window,
     text="Yellow",
@@ -218,6 +225,7 @@ def set_pink():
     pink_window.resizable(True, True)
     pink_window.configure(background="#FF00FF")
     return
+
 
 pink_window_button = tk.Button(
     window,
@@ -297,6 +305,7 @@ def random_color():
     random_color_window.resizable(True, True)
     random_color_window.configure(background=f"#{chosen_color}")
     return
+
 
 random_color_button = tk.Button(
     window,
