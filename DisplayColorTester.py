@@ -493,6 +493,8 @@ random_color_button.place(
 # Custom Colored Window
 def custom_color():
     user_color = color_input.get()
+    if user_color == "":
+        return
     window_color = user_color[:6:]
     custom_window = tk.Toplevel(window)
     custom_window.geometry(
