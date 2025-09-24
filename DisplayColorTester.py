@@ -1,7 +1,20 @@
 import tkinter as tk
 import _tkinter
 from random import choice
+import sys
+import os
 
+
+# noinspection PyProtectedMember
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except AttributeError:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
+
+
+icon_path = resource_path("icon.png")
 
 # MAIN WINDOW
 window = tk.Tk()
@@ -9,6 +22,12 @@ window.title("Display Color Tester!")
 window.geometry("420x420")
 window.resizable(False, False)
 window.config(background="#323232")
+window.iconphoto(
+    True,
+    tk.PhotoImage(
+        file=icon_path
+    )
+)
 
 
 #     Default Window Buttons
