@@ -509,6 +509,8 @@ def custom_color():
         custom_window.configure(
             background=f"#{window_color}"
         )
+        color_input.delete(0, tk.END)
+        return
     except _tkinter.TclError:
         custom_window.title(
             "No Color Was Chosen!"
@@ -535,6 +537,7 @@ def custom_color():
             rely=0.5,
             anchor="center"
         )
+        color_input.delete(0, tk.END)
     return
 
 
