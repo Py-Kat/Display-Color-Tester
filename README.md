@@ -14,12 +14,15 @@ Or even simply checking how
 colors look on a display!
 
 This ability to quickly display
-a single color on my
-own monitors, has personally helped
+a chosen color on my
+own monitors has personally helped
 me troubleshoot and identify display
 issues quite a few times,
-and aims to provide this
-same helpful experience to others!
+as well as helped with
+other display and color concerns.
+This program's aim is to
+hopefully provide that same helpful
+experience to others!
 
 ### | A Few Use Cases:
 - Using a plain white screen
@@ -36,16 +39,26 @@ display!
 identify dead pixels, or dead
 sub-pixels in a display!
 
-# | Previews:
+- Using a custom color to
+preview how that color will
+look on a display!
+
+## | Previews:
 The UI of this program
 is very simple, utilizing the
 native Python library, [***"tkinter"***](https://en.wikipedia.org/wiki/Tkinter)!
 
-## | The Main Menu:
+### | The Main Menu:
 ![MainMenu.png](images/MainMenu.png)
 
-## | The Colored Windows:
-![ColoredWindows.png](images/ColoredWindows.png)
+### | The Default RGB Colors:
+![DefaultColoredWindows.png](images/DefaultColoredWindows.png)
+
+### | The Random Color Option:
+![RandomColoredWindows.png](images/RandomColoredWindows.png)
+
+### | The Custom Color Option:
+![CustomColoredWindow.png](images/CustomColoredWindow.png)
 
 ---
 
@@ -68,3 +81,5 @@ based options!
 > - [***"Test My Screen"***](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiK89X7tuKPAxUsJ0QIHccwMLEQFnoECBkQAQ&url=https%3A%2F%2Ftestmyscreen.com%2F&usg=AOvVaw1DO2ZbntndujLjrXWsFPZ3&opi=89978449)
 > - [***"EIZO Monitor Test"***](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiK89X7tuKPAxUsJ0QIHccwMLEQFnoECCEQAQ&url=https%3A%2F%2Fwww.eizo.be%2Fmonitor-test%2F&usg=AOvVaw16rOrGdhE8JgIxVfyaOGvT&opi=89978449)
 > - [***"Mobile Screen Test"***](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiK89X7tuKPAxUsJ0QIHccwMLEQFnoECBYQAQ&url=https%3A%2F%2Fmobilescreentest.com%2F&usg=AOvVaw1j6_Zi2BGH7tQbco9pWyeS&opi=89978449)
+> 
+> ( *These are NOT created by me!* )
