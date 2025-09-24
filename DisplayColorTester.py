@@ -14,14 +14,25 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 
-icon_path = resource_path("icon.png")
+icon_path = resource_path(
+    "icon.png"
+)
 
 # MAIN WINDOW
 window = tk.Tk()
-window.title("Display Color Tester!")
-window.geometry("420x420")
-window.resizable(False, False)
-window.config(background="#323232")
+window.title(
+    "Display Color Tester!"
+)
+window.geometry(
+    "420x420"
+)
+window.resizable(
+    False,
+    False
+)
+window.config(
+    background="#323232"
+)
 window.iconphoto(
     True,
     tk.PhotoImage(
@@ -36,10 +47,19 @@ window.iconphoto(
 # Black Window
 def set_black():
     black_window = tk.Toplevel(window)
-    black_window.title("#000000")
-    black_window.geometry("1280x720")
-    black_window.resizable(True, True)
-    black_window.configure(background="#000000")
+    black_window.title(
+        "#000000"
+    )
+    black_window.geometry(
+        "1280x720"
+    )
+    black_window.resizable(
+        True,
+        True
+    )
+    black_window.configure(
+        background="#000000"
+    )
     return
 
 
@@ -47,7 +67,11 @@ black_window_button = tk.Button(
     window,
     text="Black",
     command=set_black,
-    font=("Helvetica", 22, "bold")
+    font=(
+        "Helvetica",
+        22,
+        "bold"
+    )
 )
 black_window_button.config(
     activebackground="#000000",
@@ -65,10 +89,19 @@ black_window_button.place(
 # Grey Window
 def set_grey():
     grey_window = tk.Toplevel(window)
-    grey_window.title("#7F7F7F")
-    grey_window.geometry("1280x720")
-    grey_window.resizable(True, True)
-    grey_window.configure(background="#7F7F7F")
+    grey_window.title(
+        "#7F7F7F"
+    )
+    grey_window.geometry(
+        "1280x720"
+    )
+    grey_window.resizable(
+        True,
+        True
+    )
+    grey_window.configure(
+        background="#7F7F7F"
+    )
     return
 
 
@@ -76,7 +109,11 @@ grey_window_button = tk.Button(
     window,
     text="Grey",
     command=set_grey,
-    font=("Helvetica", 22, "bold")
+    font=(
+        "Helvetica",
+        22,
+        "bold"
+    )
 )
 grey_window_button.config(
     activebackground="#7F7F7F",
@@ -94,10 +131,19 @@ grey_window_button.place(
 # White Window
 def set_white():
     white_window = tk.Toplevel(window)
-    white_window.title("#FFFFFF")
-    white_window.geometry("1280x720")
-    white_window.resizable(True, True)
-    white_window.configure(background="#FFFFFF")
+    white_window.title(
+        "#FFFFFF"
+    )
+    white_window.geometry(
+        "1280x720"
+    )
+    white_window.resizable(
+        True,
+        True
+    )
+    white_window.configure(
+        background="#FFFFFF"
+    )
     return
 
 
@@ -105,7 +151,11 @@ white_window_button = tk.Button(
     window,
     text="White",
     command=set_white,
-    font=("Helvetica", 22, "bold")
+    font=(
+        "Helvetica",
+        22,
+        "bold"
+    )
 )
 white_window_button.config(
     activebackground="#FFFFFF",
@@ -123,10 +173,19 @@ white_window_button.place(
 # Red Window
 def set_red():
     red_window = tk.Toplevel(window)
-    red_window.title("#FF0000")
-    red_window.geometry("1280x720")
-    red_window.resizable(True, True)
-    red_window.configure(background="#FF0000")
+    red_window.title(
+        "#FF0000"
+    )
+    red_window.geometry(
+        "1280x720"
+    )
+    red_window.resizable(
+        True,
+        True
+    )
+    red_window.configure(
+        background="#FF0000"
+    )
     return
 
 
@@ -134,7 +193,11 @@ red_window_button = tk.Button(
     window,
     text="Red",
     command=set_red,
-    font=("Helvetica", 22, "bold")
+    font=(
+        "Helvetica",
+        22,
+        "bold"
+    )
 )
 red_window_button.config(
     activebackground="#FF0000",
@@ -152,10 +215,19 @@ red_window_button.place(
 # Green Window
 def set_green():
     green_window = tk.Toplevel(window)
-    green_window.title("#00FF00")
-    green_window.geometry("1280x720")
-    green_window.resizable(True, True)
-    green_window.configure(background="#00FF00")
+    green_window.title(
+        "#00FF00"
+    )
+    green_window.geometry(
+        "1280x720"
+    )
+    green_window.resizable(
+        True,
+        True
+    )
+    green_window.configure(
+        background="#00FF00"
+    )
     return
 
 
@@ -163,7 +235,11 @@ green_window_button = tk.Button(
     window,
     text="Green",
     command=set_green,
-    font=("Helvetica", 22, "bold")
+    font=(
+        "Helvetica",
+        22,
+        "bold"
+    )
 )
 green_window_button.config(
     activebackground="#00FF00",
@@ -181,10 +257,19 @@ green_window_button.place(
 # Blue Window
 def set_blue():
     blue_window = tk.Toplevel(window)
-    blue_window.title("#0000FF")
-    blue_window.geometry("1280x720")
-    blue_window.resizable(True, True)
-    blue_window.configure(background="#0000FF")
+    blue_window.title(
+        "#0000FF"
+    )
+    blue_window.geometry(
+        "1280x720"
+    )
+    blue_window.resizable(
+        True,
+        True
+    )
+    blue_window.configure(
+        background="#0000FF"
+    )
     return
 
 
@@ -192,7 +277,11 @@ blue_window_button = tk.Button(
     window,
     text="Blue",
     command=set_blue,
-    font=("Helvetica", 22, "bold")
+    font=(
+        "Helvetica",
+        22,
+        "bold"
+    )
 )
 blue_window_button.config(
     activebackground="#0000FF",
@@ -210,10 +299,19 @@ blue_window_button.place(
 # Yellow Window
 def set_yellow():
     yellow_window = tk.Toplevel(window)
-    yellow_window.title("#FFFF00")
-    yellow_window.geometry("1280x720")
-    yellow_window.resizable(True, True)
-    yellow_window.configure(background="#FFFF00")
+    yellow_window.title(
+        "#FFFF00"
+    )
+    yellow_window.geometry(
+        "1280x720"
+    )
+    yellow_window.resizable(
+        True,
+        True
+    )
+    yellow_window.configure(
+        background="#FFFF00"
+    )
     return
 
 
@@ -221,7 +319,11 @@ yellow_window_button = tk.Button(
     window,
     text="Yellow",
     command=set_yellow,
-    font=("Helvetica", 22, "bold")
+    font=(
+        "Helvetica",
+        22,
+        "bold"
+    )
 )
 yellow_window_button.config(
     activebackground="#FFFF00",
@@ -239,10 +341,19 @@ yellow_window_button.place(
 # Pink Window
 def set_pink():
     pink_window = tk.Toplevel(window)
-    pink_window.title("#FF00FF")
-    pink_window.geometry("1280x720")
-    pink_window.resizable(True, True)
-    pink_window.configure(background="#FF00FF")
+    pink_window.title(
+        "#FF00FF"
+    )
+    pink_window.geometry(
+        "1280x720"
+    )
+    pink_window.resizable(
+        True,
+        True
+    )
+    pink_window.configure(
+        background="#FF00FF"
+    )
     return
 
 
@@ -250,7 +361,11 @@ pink_window_button = tk.Button(
     window,
     text="Pink",
     command=set_pink,
-    font=("Helvetica", 22, "bold")
+    font=(
+        "Helvetica",
+        22,
+        "bold"
+    )
 )
 pink_window_button.config(
     activebackground="#FF00FF",
@@ -268,10 +383,19 @@ pink_window_button.place(
 # Cyan Window
 def set_cyan():
     cyan_window = tk.Toplevel(window)
-    cyan_window.title("#00FFFF")
-    cyan_window.geometry("1280x720")
-    cyan_window.resizable(True, True)
-    cyan_window.configure(background="#00FFFF")
+    cyan_window.title(
+        "#00FFFF"
+    )
+    cyan_window.geometry(
+        "1280x720"
+    )
+    cyan_window.resizable(
+        True,
+        True
+    )
+    cyan_window.configure(
+        background="#00FFFF"
+    )
     return
 
 
@@ -279,7 +403,11 @@ cyan_window_button = tk.Button(
     window,
     text="Cyan",
     command=set_cyan,
-    font=("Helvetica", 22, "bold")
+    font=(
+        "Helvetica",
+        22,
+        "bold"
+    )
 )
 cyan_window_button.config(
     activebackground="#00FFFF",
@@ -299,7 +427,11 @@ close_button = tk.Button(
     window,
     text="Close",
     command=window.destroy,
-    font=("Helvetica", 10, "bold")
+    font=(
+        "Helvetica",
+        10,
+        "bold"
+    )
 )
 close_button.config(
     activebackground="#FF0000",
@@ -319,10 +451,19 @@ def random_color():
     hex_chars = "ABCDEF0123456789"
     chosen_color = "".join(choice(hex_chars) for _ in range(6))
     random_color_window = tk.Toplevel(window)
-    random_color_window.title(f"#{chosen_color}")
-    random_color_window.geometry("1280x720")
-    random_color_window.resizable(True, True)
-    random_color_window.configure(background=f"#{chosen_color}")
+    random_color_window.title(
+        f"#{chosen_color}"
+    )
+    random_color_window.geometry(
+        "1280x720"
+    )
+    random_color_window.resizable(
+        True,
+        True
+    )
+    random_color_window.configure(
+        background=f"#{chosen_color}"
+    )
     return
 
 
@@ -330,7 +471,11 @@ random_color_button = tk.Button(
     window,
     text="Random Color",
     command=random_color,
-    font=("Helvetica", 16, "bold")
+    font=(
+        "Helvetica",
+        16,
+        "bold"
+    )
 )
 random_color_button.config(
     activebackground="#7F7F7F",
@@ -350,19 +495,36 @@ def custom_color():
     user_color = color_input.get()
     window_color = user_color[:6:]
     custom_window = tk.Toplevel(window)
-    custom_window.geometry("1280x720")
-    custom_window.resizable(True, True)
+    custom_window.geometry(
+        "1280x720"
+    )
+    custom_window.resizable(
+        True,
+        True
+    )
     try:
-        custom_window.title(f"#{window_color}")
-        custom_window.configure(background=f"#{window_color}")
+        custom_window.title(
+            f"#{window_color}"
+        )
+        custom_window.configure(
+            background=f"#{window_color}"
+        )
     except _tkinter.TclError:
-        custom_window.title("No Color Was Chosen!")
-        custom_window.configure(background=f"#000000")
+        custom_window.title(
+            "No Color Was Chosen!"
+        )
+        custom_window.configure(
+            background=f"#000000"
+        )
         no_color_label = tk.Label(
             custom_window,
             text="Empty or Invalid Input!"
                  "\n\nPlease input a HEX value!",
-            font=("Helvetica", 40, "bold")
+            font=(
+                "Helvetica",
+                40,
+                "bold"
+            )
         )
         no_color_label.config(
             background="#000000",
@@ -380,7 +542,11 @@ custom_window_button = tk.Button(
     window,
     text="Open Custom",
     command=custom_color,
-    font=("Helvetica", 12, "bold")
+    font=(
+        "Helvetica",
+        12,
+        "bold"
+    )
 )
 custom_window_button.config(
     activebackground="#7F7F7F",
@@ -402,7 +568,11 @@ custom_window_button.place(
 version_label = tk.Label(
     window,
     text="v1.1",
-    font=("Helvetica", 14, "bold")
+    font=(
+        "Helvetica",
+        14,
+        "bold"
+    )
 )
 version_label.config(
     background="#323232",
@@ -419,7 +589,11 @@ version_label.place(
 custom_input_label = tk.Label(
     window,
     text="Custom Color",
-    font=("Helvetica", 14, "bold")
+    font=(
+        "Helvetica",
+        14,
+        "bold"
+    )
 )
 custom_input_label.config(
     background="#323232",
@@ -436,7 +610,11 @@ custom_input_label.place(
 hashtag_label = tk.Label(
     window,
     text="#",
-    font=("Helvetica", 14, "bold")
+    font=(
+        "Helvetica",
+        14,
+        "bold"
+    )
 )
 hashtag_label.config(
     background="#323232",
@@ -455,7 +633,11 @@ hashtag_label.place(
 color_input = tk.Entry(
     window,
     width=7,
-    font=("Helvetica", 14, "bold")
+    font=(
+        "Helvetica",
+        14,
+        "bold"
+    )
 )
 color_input.place(
     relx=0.5,
